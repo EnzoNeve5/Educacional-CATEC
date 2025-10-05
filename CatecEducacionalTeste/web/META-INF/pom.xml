@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <project xmlns="http://maven.apache.org/POM/4.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+       <modelVersion>4.0.0</modelVersion>
+
+       <!-- Project coordinates: adjust these to your needs -->
+       <groupId>com.example</groupId>
+       <artifactId>catec-educacional-teste</artifactId>
+       <version>1.0-SNAPSHOT</version>
+       <packaging>war</packaging>  <!-- Use 'jar' if not a web app -->
+
+       <!-- Project metadata -->
+       <name>Catec Educacional Teste</name>
+       <description>A sample project</description>
+
+       <!-- Properties for versions (optional but recommended) -->
+       <properties>
+           <maven.compiler.source>11</maven.compiler.source>  <!-- Adjust Java version -->
+           <maven.compiler.target>11</maven.compiler.target>
+           <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+       </properties>
+
+       <!-- Dependencies section -->
+       <dependencies>
+           <!-- Your PostgreSQL dependency -->
+           <dependency>
+               <groupId>org.postgresql</groupId>
+               <artifactId>postgresql</artifactId>
+               <version>42.5.4</version>
+           </dependency>
+
+           <dependency>
+               <groupId>jakarta.servlet</groupId>
+               <artifactId>jakarta.servlet-api</artifactId>
+               <version>5.0.0</version> <!-- Ou a versão compatível com seu servidor de aplicação -->
+               <scope>provided</scope>
+           </dependency>
+           <!-- Add other dependencies here, e.g., for a web app -->
+           <!--
+           <dependency>
+               <groupId>javax.servlet</groupId>
+               <artifactId>javax.servlet-api</artifactId>
+               <version>4.0.1</version>
+               <scope>provided</scope>
+           </dependency>
+           -->
+       </dependencies>
+
+       <!-- Build configuration (optional for basics) -->
+       <build>
+           <plugins>
+               <!-- Maven Compiler Plugin -->
+               <plugin>
+                   <groupId>org.apache.maven.plugins</groupId>
+                   <artifactId>maven-compiler-plugin</artifactId>
+                   <version>3.11.0</version>
+                   <configuration>
+                       <source>11</source>
+                       <target>11</target>
+                   </configuration>
+               </plugin>
+           </plugins>
+       </build>
+   </project>
+   

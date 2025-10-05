@@ -1,0 +1,188 @@
+@charset "UTF-8"; /* Define a codificação de caracteres para a folha de estilo. */
+
+body { /* Estilos aplicados ao corpo do documento HTML. */
+    background-color: blue; /* Define a cor de fundo do corpo como azul. */
+    color: blue; /* Define a cor do texto padrão do corpo como azul. */
+    font-size: 30px; /* Define o tamanho da fonte padrão do corpo como 30 pixels. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte padrão. */
+}
+
+main { /* Estilos aplicados ao elemento <main>. */
+    background-color: white; /* Define a cor de fundo do conteúdo principal como branco. */
+    border-radius: 10px; /* Arredonda os cantos do conteúdo principal em 10 pixels. */
+    box-shadow: 5px 5px 15px rgba(100, 25, 25, 0.5); /* Adiciona uma sombra ao redor do conteúdo principal. */
+    width: 800px; /* Define a largura do conteúdo principal como 800 pixels. */
+    padding: 10px; /* Adiciona um preenchimento interno de 10 pixels. */
+    margin: auto; /* Centraliza o conteúdo principal horizontalmente na página. */
+}
+
+a { /* Estilos aplicados aos links (elementos <a>). */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+    background-color: blue; /* Define a cor de fundo dos links como azul. */
+    color: white; /* Define a cor do texto dos links como branco. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte dos links. */
+    float: unset; /* Remove qualquer flutuação definida anteriormente para links. */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels (sem cor ou estilo definidos, então será invisível). */
+    font-size: 16px; /* Define o tamanho da fonte dos links como 16 pixels. */
+}
+
+textarea { /* Estilos aplicados aos elementos <textarea>. */
+    background-color: rgb(220, 220, 220); /* Define a cor de fundo da área de texto como cinza claro. */
+    color: blue; /* Define a cor do texto da área de texto como azul. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte da área de texto. */
+    float: unset; /* Remove qualquer flutuação definida anteriormente. */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels (sem cor ou estilo definidos). */
+    font-size: 16px; /* Define o tamanho da fonte da área de texto como 16 pixels. */
+}
+ 
+.topnav input[type=text] { /* Estilos aplicados a campos de entrada de texto dentro de elementos com a classe 'topnav'. */
+    background-color: rgb(220, 220, 220); /* Define a cor de fundo como cinza claro. */
+    color: blue; /* Define a cor do texto como azul. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte. */
+    float: unset; /* Remove qualquer flutuação. */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels. */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels. */
+}
+
+.topnav input[type=password] { /* Estilos aplicados a campos de entrada de senha dentro de elementos com a classe 'topnav'. */
+    background-color: rgb(220, 220, 220); /* Define a cor de fundo como cinza claro. */
+    color: blue; /* Define a cor do texto como azul. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte. */
+    float: unset; /* Remove qualquer flutuação. */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels. */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels. */
+}
+
+.topnav input[type=number] { /* Estilos aplicados a campos de entrada numérica dentro de elementos com a classe 'topnav'. */
+    background-color: rgb(220, 220, 220); /* Define a cor de fundo como cinza claro. */
+    color: blue; /* Define a cor do texto como azul. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte. */
+    float: unset; /* Remove qualquer flutuação. */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels. */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels. */
+    width: 80px; /* Define a largura do campo como 80 pixels. */
+}
+
+.topnav input[type=email] { /* Estilos aplicados a campos de entrada de e-mail dentro de elementos com a classe 'topnav'. */
+    background-color: rgb(220, 220, 220); /* Define a cor de fundo como cinza claro. */
+    color: blue; /* Define a cor do texto como azul. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte. */
+    float: unset; /* Remove qualquer flutuação. */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels. */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels. */
+}
+
+.topnav input[type=date] { /* Estilos aplicados a campos de entrada de data dentro de elementos com a classe 'topnav'. */
+    background-color: rgb(220, 220, 220); /* Define a cor de fundo como cinza claro. */
+    color: blue; /* Define a cor do texto como azul. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte. */
+    float: unset; /* Remove qualquer flutuação. */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels. */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels. */
+}
+
+.topnav input[type=button] { /* Estilos aplicados a botões de tipo 'button' dentro de elementos com a classe 'topnav'. */
+    background-color: lightblue; /* Define a cor de fundo como azul claro. */
+    color: blue; /* Define a cor do texto como azul. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte. */
+    float: unset; /* Remove qualquer flutuação. */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels. */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels. */
+}
+
+.topnav input[type=submit] { /* Estilos aplicados a botões de tipo 'submit' dentro de elementos com a classe 'topnav'. */
+    background-color: blue; /* Define a cor de fundo como azul. */
+    color: white; /* Define a cor do texto como branco. */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a família da fonte. */
+    float: unset; /* Remove qualquer flutuação. */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels. */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels. */
+}
+
+img { /* Estilos aplicados a elementos <img>. */
+    float: inline-start; /* Flutua a imagem para o início da linha (esquerda em LTR). */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels. */
+    border: 4px; /* Define uma borda de 4 pixels (sem cor ou estilo definidos). */
+    font-size: 16px; /* Define o tamanho da fonte (embora não se aplique diretamente a imagens, pode afetar legendas ou texto alternativo). */
+}
+
+.popup { /* Estilos para a classe 'popup' (usada para popups). */
+    display: none; /* Oculta o popup por padrão. */
+    position: fixed; /* Posiciona o popup fixamente na tela, independentemente da rolagem. */
+    top: 0; /* Alinha o popup ao topo da tela. */
+    left: 0; /* Alinha o popup à esquerda da tela. */
+    width: 100%; /* Define a largura total do popup como 100% da tela. */
+    height: 100%; /* Define a altura total do popup como 100% da tela. */
+    background-color: rgba(0,0,0,0.7); /* Define a cor de fundo do popup como preto semi-transparente. */
+}
+  
+.conteudo-popup { /* Estilos para o conteúdo dentro do popup. */
+    position: absolute; /* Posiciona o conteúdo do popup de forma absoluta em relação ao seu pai (.popup). */
+    top: 50%; /* Move o topo do conteúdo para 50% da altura do pai. */
+    left: 50%; /* Move a esquerda do conteúdo para 50% da largura do pai. */
+    transform: translate(-50%, -50%); /* Centraliza o conteúdo do popup usando uma transformação CSS. */
+    background-color: #fefefe; /* Define a cor de fundo do conteúdo como branco quase puro. */
+    padding: 20px; /* Adiciona um preenchimento interno de 20 pixels. */
+    border-radius: 5px; /* Arredonda os cantos do conteúdo em 5 pixels. */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona uma sombra ao redor do conteúdo. */
+}
+  
+.fechar { /* Estilos para o botão de fechar o popup. */
+    color: #aaa; /* Define a cor do texto como cinza claro. */
+    float: right; /* Flutua o botão para a direita. */
+    font-size: 28px; /* Define o tamanho da fonte como 28 pixels. */
+    font-weight: bold; /* Define a fonte como negrito. */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar sobre o botão. */
+}
+  
+.fechar:hover, /* Estilos para o botão de fechar quando o mouse está sobre ele. */
+.fechar:focus { /* Estilos para o botão de fechar quando ele está em foco. */
+    color: black; /* Altera a cor do texto para preto. */
+    text-decoration: none; /* Remove qualquer decoração de texto. */
+    cursor: pointer; /* Garante que o cursor seja um ponteiro. */
+}
+
+.secondpopup { /* Estilos para a classe 'secondpopup' (para um segundo tipo de popup). */
+    display: none; /* Oculta o segundo popup por padrão. */
+    position: fixed; /* Posiciona o popup fixamente na tela. */
+    top: 0; /* Alinha ao topo. */
+    left: 0; /* Alinha à esquerda. */
+    width: 100%; /* Largura total. */
+    height: 100%; /* Altura total. */
+    background-color: rgba(0,0,0,0.7); /* Cor de fundo semi-transparente. */
+}
+  
+.conteudo-segundopopup { /* Estilos para o conteúdo dentro do segundo popup. */
+    position: absolute; /* Posicionamento absoluto. */
+    top: 50%; /* Centraliza verticalmente. */
+    left: 50%; /* Centraliza horizontalmente. */
+    transform: translate(-50%, -50%); /* Ajusta para centralização exata. */
+    background-color: #fefefe; /* Cor de fundo branca. */
+    padding: 20px; /* Preenchimento interno. */
+    border-radius: 5px; /* Cantos arredondados. */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra. */
+}
+  
+.fechardois { /* Estilos para o botão de fechar o segundo popup. */
+    color: #aaa; /* Cor do texto cinza claro. */
+    float: right; /* Flutua para a direita. */
+    font-size: 28px; /* Tamanho da fonte. */
+    font-weight: bold; /* Negrito. */
+    cursor: pointer; /* Cursor ponteiro. */
+}
+  
+.fechardois:hover, /* Estilos para o botão de fechar do segundo popup quando o mouse está sobre ele. */
+.fechardois:focus { /* Estilos para o botão de fechar do segundo popup quando ele está em foco. */
+    color: black; /* Altera a cor do texto para preto. */
+    text-decoration: none; /* Remove decoração de texto. */
+    cursor: pointer; /* Garante cursor ponteiro. */
+}

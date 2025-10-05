@@ -1,0 +1,150 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="catec.css">
+    <title>Como Professor</title>
+    <style>
+        img {
+            float: unset;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            float: unset;
+            padding: 8px;
+            border: 4px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="topnav">
+        <img src="catec-logo.png" alt="CATEC">
+        <p>Dados Pessoais:</p>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="file">Foto de Perfil (Opcional):</label>
+            <input type="file" id="file" name="file" accept="image/*">
+            <input type="submit" value="Enviar Foto">
+        </form>
+
+        <h2>Gerador de Senhas (Opcional)</h2>
+
+        <label for="length">Comprimento da Senha:</label>
+        <input type="number" id="length" min="8" max="20" value="14">
+
+        <br>
+
+        <label for="uppercase">Incluir Letras Maiúsculas:</label>
+        <input type="checkbox" id="uppercase" checked>
+
+        <br>
+
+        <label for="numbers">Incluir Números:</label>
+        <input type="checkbox" id="numbers" checked>
+
+        <br>
+
+        <label for="symbols">Incluir Sí­mbolos:</label>
+        <input type="checkbox" id="symbols" checked>
+
+        <br>
+
+        <button onclick="generatePassword()">Gerar Senha</button>
+
+        <div id="generatedPassword"></div>
+
+        <form id="registroForm" onsubmit="return validarForm()" action="SalvarProfessorServlet" method="post">
+
+        <p>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+
+        <p>
+            <label for="text">Instituição:</label>
+            <input type="text" id="txtnac" name="txtnac" required>
+        </p>
+
+        <p>
+            <label for="dataNascimento">Data de Nascimento (opcional):</label>
+            <input type="date" id="date" name="date">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        
+        <p>
+            <label for="areaAtuacao">Área de Atuação:</label>
+            <input type="text" id="areaAtuacao" name="areaAtuacao" required>
+        </p>
+
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </p>
+
+        <p>
+            <label for="senha">Confirmar Senha:</label>
+            <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+        </p>
+        <input type="submit" value="Criar Conta">
+        <a href="ajuda.jsp">Ajuda</a>
+        </form>
+        </div>
+    </main>
+    <script>
+        function validarForm() {
+            var senha = document.getElementById("senha").value;
+            var confirmarSenha = document.getElementById("confirmarSenha").value;
+
+            if (senha !== confirmarSenha) {
+                alert("As senhas não coincidem.");
+                return false;
+            }
+
+            return true;
+        }
+        function generatePassword() {
+            const length = document.getElementById('length').value;
+            const includeUppercase = document.getElementById('uppercase').checked;
+            const includeNumbers = document.getElementById('numbers').checked;
+            const includeSymbols = document.getElementById('symbols').checked;
+
+            const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
+            const numberChars = '0123456789';
+            const symbolChars = '!@#$%^&*()_-+=<>?/';
+
+            let allChars = lowercaseChars;
+
+            if (includeUppercase) {
+                allChars += uppercaseChars;
+            }
+
+            if (includeNumbers) {
+                allChars += numberChars;
+            }
+
+            if (includeSymbols) {
+                allChars += symbolChars;
+            }
+
+            let generatedPassword = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * allChars.length);
+                generatedPassword += allChars.charAt(randomIndex);
+            }
+
+            document.getElementById('generatedPassword').textContent = generatedPassword;
+        }
+    </script>
+</body>
+</html>
