@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5. -->
+<html lang="pt-br"> <!-- Define o idioma do documento como português do Brasil. -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade em dispositivos móveis. -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- Define o ícone da aba do navegador. -->
+    <link rel="stylesheet" href="catec.css"> <!-- Linka o arquivo CSS externo para estilização. -->
+    <title>Página Inicial</title> <!-- Define o título da página exibido na aba do navegador. -->
+    <style>
+        img { /* Inicia um bloco de estilo CSS para a tag <img>. */
+            float: unset; /* Remove qualquer flutuação definida anteriormente para imagens. */
+        }
+    </style>
+</head>
+<body>
+    <main> <!-- Define o conteúdo principal da página. -->
+    <img src="catec-logo.png" alt="CATEC"> <!-- Exibe a imagem do logo CATEC. -->
+    <p>Criando novos mundos e expandindo seus horizontes!</p> <!-- Parágrafo com uma mensagem de boas-vindas. -->
+    
+    <div class="topnav"> <!-- Div para agrupar elementos de navegação superior. -->
+    <form action="LoginServlet" method="post"> <!-- Formulário de login que envia dados para "LoginServlet" via método POST. -->
+        <p> <!-- Parágrafo para agrupar os radio buttons. -->
+        Professor ou Aluno: <!-- Texto descritivo para os radio buttons. -->
+        <!-- Correção: Adicionado name="tipoUsuario" e value para os radio buttons, e movidos para dentro do form -->
+        <input type="radio" name="tipoUsuario" id="professor" value="professor" checked> <!-- Radio button para "Professor", selecionado por padrão. -->
+        <label for="professor">Como Professor</label> <!-- Rótulo para o radio button "Professor". -->
+        <input type="radio" name="tipoUsuario" id="aluno" value="aluno"> <!-- Radio button para "Aluno". -->
+        <label for="aluno">Como Aluno</label> <!-- Rótulo para o radio button "Aluno". -->
+        </p>
+        <p> <!-- Parágrafo para agrupar o campo de e-mail. -->
+        <label for="email">E-mail:</label> <!-- Rótulo para o campo de e-mail. -->
+        <input type="email" id="email" name="email" required> <!-- Campo de entrada para e-mail, obrigatório. -->
+        </p>
+        <p> <!-- Parágrafo para agrupar o campo de senha. -->
+        <label for="senha">Senha:</label> <!-- Rótulo para o campo de senha. -->
+        <input type="password" id="senha" name="senha" required> <!-- Campo de entrada para senha, obrigatório. -->
+        </p>
+        <input type="submit" value="Entrar"> <!-- Botão de submissão do formulário com o texto "Entrar". -->
+        <a href="Criar Conta.jsp">Criar Conta</a> <!-- Link para a página de criação de conta. -->
+        <a href="ajuda.jsp">Ajuda</a> <!-- Link para a página de ajuda. -->
+    </form>
+    </div>
+    </main>
+</body>
+</html>
